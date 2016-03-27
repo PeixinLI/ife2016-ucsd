@@ -32,7 +32,7 @@ header .tags{
 	font-size: 12px;
 }
 
-article{
+article,aside{
 	background-color: #fff;
 	padding: 30px;
 	margin: 20px;
