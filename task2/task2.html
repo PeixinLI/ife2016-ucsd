@@ -97,13 +97,17 @@
 		</ol>
 		下面是一个表格，给表格加了一个border="1"好让你看出是一个表格
 		<table border="1">
+
+		    <thead>
+		        <tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+		    </thead>
+
 			<tbody>
 				<tr>
-					<th>表头</th>
-					<th>表头</th>
-					<th>表头</th>
-				</tr>
-				<tr>
 					<td>表内容单元格</td>
 					<td>表内容单元格</td>
 					<td><a href="">操作</a></td>
@@ -122,29 +126,35 @@
 					<td>表内容单元格</td>
 					<td>表内容单元格</td>
 					<td><a href="">操作</a></td>
-				</tr>
-				<tr>
-					<td>总计</td>
-					<td colspan="2">1000</td>
 				</tr>
 			</tbody>
+
+			<tfoot>
+			    <tr>
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>	
+			</tfoot>
 		</table>
+</article>
+
+<aside>
 		<h3>这里以后是一个侧栏， 这是侧栏的标题</h3>
 			<h4>侧栏注册窗口标题</h4>
-			请输入邮箱地址：<input type="text" name="email" value="这是一个文本输入框" /><br />
-			邮箱地址请按要求格式输入<br />
-			请输入密码：<input type="text" name="password" value="这是一个文本输入框" /><br />
-			请重复输入密码：<input type="text" name="repeatPassword" value="这是一个文本输入框" /><br />
-			密码请为6-16位英文数字<br />
-			<br />
 			<form action="save.php" method="post">
+			<div class="form"><label>请输入邮箱地址：</label><input type="text" name="email" value="这是一个文本输入框" /><br /></div>
+			<div><label></label><p class="tips">邮箱地址请按要求格式输入</p><br /></div>
+			<div class="form"><label>请输入密码：</label><input type="password" name="password" value="这是一个文本输入框" /><br /></div>
+			<div class="form"><label>请重复输入密码：</label><input type="password" name="repeatPassword" value="这是一个文本输入框" /><br /></div>
+			<div><label></label><p class="tips">密码请为6-16位英文数字</p><br /></div>
+			<div class="form">
     			<label>性别：</label>
     			<input type="radio" name="gender" value="1" id="male" />
-    			<label for="male">男</label>
+    			男  
     			<input type="radio" name="gender" value="2" id="female" />
-    			<label for="female">女</label>
-			</form>
-			<form action="save.php" method="post">
+    			女
+			</div>
+			<div class="form">
     			<label>城市：</label>
     			<select>
       				<option value="北京" selected="selected">北京</option>
@@ -153,22 +163,26 @@
       				<option value="武汉">武汉</option>
       				<option value="太原">太原</option>
     			</select>
-			</form>
-			<form>
+
+			</div>
+			<div class="form">
 				<label>爱好：</label>
 				<input type="checkbox" name="hobby1" value="运动"> 运动
 				<input type="checkbox" name="hobby2" value="艺术"> 艺术
 				<input type="checkbox" name="hobby3" value="科学"> 科学
-			</form>
-			<form>
+			</div>
+			<div class="form">
 				<label>个人描述</label>
-				<textarea rows="2" cols="20">这是一个多行描述框，输入您的个人描述</textarea>
-			</form>
-			<form>
+				<textarea rows="3" cols="50">这是一个多行描述框，输入您的个人描述</textarea>
+			</div>
 				<input type="submit" value="确认提交">
 			</form>
-			<br />版权所有&copy
-</article>
+			
+</aside>
+
+<footer>
+	<br />版权所有&copy
+</footer>
 
 </body>
 </html>
