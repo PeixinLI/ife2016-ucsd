@@ -64,7 +64,7 @@ article, aside {
 	color: #999;
 	font-size: 12px;
 }
-article p a:hover {
+article a:hover {
     color: red;
 }
 .paragraph p {
