@@ -22,7 +22,7 @@ header div{
 	height: 61px;
 	background-color: #d45d5c;
 }
-header div p{
+header p.website{
     position:absolute;
     bottom: -10px;
 	color:#fff;	
@@ -98,7 +98,6 @@ p{
 	font-family: "KaiTi";
 	font-size: 12px;
 	line-height: 10px;
-	/*border: solid;*/
 	margin-bottom: 20px;
 	margin-top: 12px;
 }
@@ -223,13 +222,14 @@ div.mod3-right-up{
 /*	border: solid;
 */}
 div.mod3-right-down{
-	width: 459px;
-	height: 318px
-	background-color:black;
-	margin-top:20px;
-	bottom: 0;
-	border: solid;
+	width: 458px;
+	height: 318px;
+	background-color:#cc0;
+	opacity: 0.1;
+	position: absolute;
+	bottom: 40px;
 }
+
 
 footer{
 	position:relative;
@@ -237,23 +237,17 @@ footer{
 
 footer p{
 	position: absolute;
+	top:0px;
 	right:0px;
-	color: 938e8c;
+	color: #d45d5c;
 }
 
-hr.upperline{
-	border-width: 1px;
+hr.footer-upperline{
 	color: #938e8c;
+	border-style: solid;
+	border-width: 1px;
 }
 
-.mod3-right-down li{
-	font-size: 14x;
-	color: #5a5b5b;
-	font-family: "SimSun";
-	margin-bottom: 20px;
-
-
-}
 img.img3{
 	width: 458px;
 	height: 275px;
@@ -262,19 +256,61 @@ li > span{
 	font-size: 12px;
 	font-style: italic;
 }
-div.down1{
+body .mod3 .down1{
+	width: 458px;
+	height: 190px;
+	font-size: 14px;
+	color:black;
+	line-height: 40px;
+	font-family: "SimSun";
+	position: absolute;
+	bottom: 150px;
+}
+div.down2{
 	width: 260px;
 	height: 160px;
+	bottom: 40px;
+	background: #d45d5c;
 	position: absolute;
-	bottom: 0px;
-	background: white;
 }
 
-div.down2{
-	width: 199px;
+div.down3{
+	width: 189px;
 	height: 160px;
-	position: absolute;
 	right: 0px;
-	bottom: 0px;
-
+	bottom: 30px;
+	position: absolute;
 }
+.down2 p.chr1{
+	font-size:120px;
+	color: white;
+	position: absolute;
+	bottom: 53px;
+	left: 10px;
+}
+.down2  div.vertical-line{
+	height: 86px;
+	width: 2px;
+	background-color: white;
+	position: absolute;
+	right: 180px;
+	bottom: 35px;
+}
+.down2 p.chr2{
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	bottom: 60px;
+	left: 90px;
+	line-height: 20px;
+}
+.down2 p.chr3{
+	font-size: 10px;
+	width: 160px;
+	color: white;
+	position: absolute;
+	bottom: 30px;
+	left: 90px;
+	line-height: 12px;
+}
+
