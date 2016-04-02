@@ -79,18 +79,17 @@ header .underline{
 	height: 301px;
 	right: 0px;
 	top:0px;
-	/*border: solid;*/
 }
 
-.mod1-right h2{
+.mod1-right h2.title1{
 	color: #000;
 	font-family:"Microsoft Yahei";
 	text-decoration: underline;
 	font-size: 24px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	/*border: solid;*/
 }
+
 p{
 	display: block;
 	font-size:12px;
@@ -116,7 +115,12 @@ p.num{
 }
 .down{
 	position:relative;
-	/*border: solid;*/
+}
+
+.img1{
+	position: absolute;
+	width:641px;
+	height:301px;
 }
 
 p.mark-1 {
@@ -168,6 +172,21 @@ div.mod2{
 	left: 500px;
 }
 
+.mod2 h2.what{
+	color: #009933;
+	text-decoration: underline;
+}
+
+.mod2 h2.why{
+	color: #d2994f;
+	text-decoration: underline;
+}
+
+.mod2 h2.how{
+	color: #cc7680;
+	text-decoration: underline;
+}
+
 div.mod3{
 	width: 100%;
 	position: relative;
@@ -216,7 +235,7 @@ img.img2{
 	float: right;
 	width: 170px;
 	height: 270px;
-	margin: 20px 0 20px 20px
+	margin: 20px 0 20px 15px
 }
 div.mod3-right-up{
 /*	border: solid;
