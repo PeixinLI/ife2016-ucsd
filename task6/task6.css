@@ -199,6 +199,14 @@ div.mod3{
 	position: absolute;
 }
 
+h2 span:first-child{
+	display: inline-block;
+	color: #f5e327;
+	font-size:60px;
+	font-family: "SimHei";
+
+}
+
 .mod3-right{
 	width: 458px;
 	height: 650px;
