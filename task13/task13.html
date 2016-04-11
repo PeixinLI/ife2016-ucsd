@@ -23,7 +23,7 @@
     var inputVal = document.getElementById("aqi-input");
     var bttn = document.getElementById("button");
     var displayVal = document.getElementById("aqi-display");
-    bttn.onclick = function output(){
+    var display = function (){
       if (inputVal.value){
         displayVal.innerHTML = inputVal.value;
       } else{
@@ -33,8 +33,9 @@
         // }
       } 
     }
-    
+    bttn.onclick = function (){display();}
 
+    inputVal.onkeyup = function(){display();}
 })();
 
 </script>
